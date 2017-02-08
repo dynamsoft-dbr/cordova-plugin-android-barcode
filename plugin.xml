@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android" id="phonegap-plugin-barcodescanner" version="6.0.5">
+  <name>BarcodeScanner</name>
+  <description>Use Dynamsoft Barcode Reader plugin to scan different types of barcodes.</description>
+  <license>MIT</license>
+  <engines>
+    <engine name="cordova" version=">=3.0.0"/>
+  </engines>
+  <js-module src="www/barcodescanner.js" name="BarcodeScanner">
+    <clobbers target="cordova.plugins.barcodeScanner"/>
+  </js-module>
+  <platform name="android">
+    <source-file src="src/android/com/phonegap/plugins/barcodescanner/BarcodeScanner.java" target-dir="src/com/phonegap/plugins/barcodescanner"/>
+    <config-file target="res/xml/config.xml" parent="/*">
+      <feature name="BarcodeScanner">
+        <param name="android-package" value="com.phonegap.plugins.barcodescanner.BarcodeScanner"/>
+      </feature>
+    </config-file>
+    <config-file target="AndroidManifest.xml" parent="/manifest/application">
+      <activity android:name="com.dynamsoft.demo.dynamsoftbarcodereaderdemo.DBR" android:clearTaskOnLaunch="true" android:configChanges="orientation|keyboardHidden|screenSize" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:windowSoftInputMode="stateAlwaysHidden" android:exported="false" />
+    </config-file>
+    <config-file target="AndroidManifest.xml" parent="/manifest">
+      <uses-permission android:name="android.permission.CAMERA"/>
+      <uses-permission android:name="android.permission.FLASHLIGHT"/>
+      <uses-feature android:name="android.hardware.camera" android:required="true"/>
+    </config-file>
+    <framework src="src/android/barcodescanner.gradle" custom="true" type="gradleReference"/>
+    <resource-file src="src/android/dbr.aar" target="libs/dbr.aar"/>
+    <resource-file src="src/android/DynamsoftBarcodeReader.aar" target="libs/DynamsoftBarcodeReader.aar"/>
+    <dependency id="cordova-plugin-compat" version="^1.0.0"/>
+  </platform>
+</plugin>
