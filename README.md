@@ -1,7 +1,7 @@
 # Cordova Plugin with Dynamsoft Barcode Reader for Android
 ================================
 
-The plugin is based on https://github.com/phonegap/phonegap-plugin-barcodescanner. We replace ZXing with [Dynamsoft Barcode Reader SDK](http://www.dynamsoft.com/Products/barcode-scanner-sdk-ios.aspx).
+The plugin is based on https://github.com/phonegap/phonegap-plugin-barcodescanner. We replace ZXing with [Dynamsoft Barcode Reader SDK](http://www.dynamsoft.com/Products/barcode-scanner-sdk-android.aspx).
 
 ## Installation
 1. Install **Cordova** vi **npm**:
