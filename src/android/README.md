@@ -1,1 +1,1 @@
-The Android .aar sources are [here](https://github.com/EddyVerbruggen/barcodescanner-lib-aar).
+The Android dbr.aar sources are [here](https://github.com/dynamsoft-dbr/android-barcode-lib-aar).
