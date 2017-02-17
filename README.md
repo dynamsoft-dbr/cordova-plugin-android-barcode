@@ -86,6 +86,9 @@ The following barcode types are currently supported:
     },
 ```
 
+## Blog
+[Cordova Plugin with Android AAR File for Barcode](http://www.codepool.biz/cordova-plugin-android-aar-barcode.html)
+
 ## Licence ##
 
 The MIT License
