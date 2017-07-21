@@ -1,0 +1,30 @@
+{
+  "name": "cordova-plugin-android-barcode",
+  "version": "1.0.0",
+  "description": "Dynamsoft Barcode Reader for Cordova Android",
+  "cordova": {
+    "id": "cordova-plugin-android-barcode",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dynamsoft-dbr/cordova-plugin-android-barcode.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "ecosystem:phonegap",
+    "cordova-android",
+    "cordova:plugin"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "author": "Dynamsoft",
+  "license": "MIT",
+  "homepage": "https://github.com/dynamsoft-dbr/cordova-plugin-android-barcode"
+}
